@@ -1,0 +1,35 @@
+import java.util.*;
+class task2{
+    public static void main(String[] args){
+         int input1=3521;
+         int input2=2452;
+         int input3=1352;
+         int a=input1/1000;
+         int b=input2/1000;
+         int c=input3/1000;
+         int largest1=Math.max(a,Math.max(b,c));
+         int smallest1=Math.min(a,Math.min(b,c));
+         System.out.print(largest1-smallest1);
+         int d=(input1/100)%10;
+         int e=(input2/100)%10;
+         int f=(input3/100)%10;
+         int largest2=Math.max(d,Math.max(e,f));
+         int smallest2=Math.min(d,Math.min(e,f));
+         System.out.print(largest2-smallest2);
+         int g=(input1/10)%10;
+         int h=(input2/10)%10;
+         int i=(input3/10)%10;
+        int largest3=Math.max(g,Math.max(h,i));
+        int smallest3=Math.min(g,Math.min(h,i));
+        System.out.print(largest3-smallest3);
+         int j=(input1%10);
+         int k=(input2%10);
+         int l=(input3%10);
+        int largest4=Math.max(j,Math.max(k,l));
+        int smallest4=Math.min(j,Math.min(k,l));
+        System.out.print(largest4-smallest4);
+
+
+         
+    }
+}
