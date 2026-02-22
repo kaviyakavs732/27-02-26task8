@@ -1,0 +1,39 @@
+import java.util.*;
+class task5{
+    public static void main(String[] args){
+        int input1=3521;
+        int input2=2452;
+        int input3=1352;
+        int input4=38;
+        int max=0;
+        while(input1>0){
+            int digit=input1%10;
+            if(digit>max){
+                max=digit;
+                
+            }
+            input1=input1/10;
+        }
+
+        while(input2>0){
+            int digit=input2%10;
+            if(digit>max){
+                max=digit;
+                
+            }
+            input2=input2/10;
+        }
+        
+        while(input3>0){
+            int digit=input3%10;
+            if(digit>max){
+                max=digit;
+                
+            }
+            input3=input3/10;
+        }
+    
+        System.out.println((max*max*max)+input4);
+    }
+    }
+    
